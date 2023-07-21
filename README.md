@@ -1,7 +1,7 @@
 <h1 align="center">GOONO SERVER</h1>
 
 [![Build Status](https://jenkins.redwit.io/buildStatus/icon?job=redwit-dev%2Fgoono-server-ts%2Fdev)](https://jenkins.redwit.io/job/redwit-dev/job/goono-server-ts/job/dev/)
-![version badge](https://img.shields.io/badge/version-3.1-brightgreen.svg)
+[![Generic badge](https://img.shields.io/badge/version-v3.1.4-green.svg)](https://github.com/redwit-dev/goono-server-ts/releases)
 
 ## 1. Outline
 ### 1.1. Introduction
