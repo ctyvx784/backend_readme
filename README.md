@@ -9,8 +9,8 @@
   <ol>
     <li>
         <a href="#outline">Outline</a>
-              <ul>
-        <li><a href="#introduction">Introduction</a></li>
+    <ul>
+        <li>[Introduction](#introduction)</li>
         <li><a href="#contributing">Contributing</a></li>
         <li><a href="#rule-of-pr">Rule of PR</a></li>
         <li><a href="#directories">Directories</a></li>
