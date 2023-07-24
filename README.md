@@ -3,16 +3,46 @@
 [![Build Status](https://jenkins.redwit.io/buildStatus/icon?job=redwit-dev%2Fgoono-server-ts%2Fdev)](https://jenkins.redwit.io/job/redwit-dev/job/goono-server-ts/job/dev/)
 [![Generic badge](https://img.shields.io/badge/version-v3.1.4-green.svg)](https://github.com/redwit-dev/goono-server-ts/releases)
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+        <a href="#outline">Outline</a>
+              <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#contributing">Contributing</a></li>
+        <li><a href="#rule-of-pr">Rule of PR</a></li>
+        <li><a href="#directories">Directories</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
 ## 1. Outline
 ### 1.1. Introduction
-
 A repository for the Typescript Backend Server using those libraries:
   - [NestJS](https://nestjs.com): A progressive Node.js framework
   - [Fastify](https://fastify.dev/): Fast and low overhead web framework, for Node.js
   - [Sequelize](https://sequelize.org/): TypeScript and Node.js ORM for database
 
-### 1.2. Directories
-This template project has categorized directories like below.
+### 1.2. Contributing
+- <a href="https://github.com/redwit-dev/goono-server-ts/issues/new?assignees=&labels=&projects=&template=feature_request.md&title=">
+    Making Feature/Enhancement Proposals
+  </a>
+- <a href="https://github.com/redwit-dev/goono-server-ts/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=">
+   Bug report
+  </a>
+
+### 1.3 Rule of PR
+- For new APIs, please submit the test code that calls the API directly together
+- For features that are currently not available for testing (e.g., requiring a window worker or a blockchain integration), please attach a screenshot that works fine on the test server
+- If this is a bug fix, attach a screenshot that works fine on the test server. (Ensure that emergency patches work.)
+- Each commit can be written roughly, but the PR message should be made in detail
+- At least merge after `Bors try`
+
+### 1.4. Directories
+This project has categorized directories like below.
 
 As you can see from the below, all of the TypeScript source files are placed into the [src](src/) directory. When you build the TypeScript source files, compiled files would be placed into the `dist` directory following the [tsconfig.json](tsconfig.json) configuration.
 
@@ -48,7 +78,7 @@ As you can see from the below, all of the TypeScript source files are placed int
 Our backend server is optimized for deployment as docker. Therefore, to mount this backend server on your local machine, recommend to install the [`Docker Desktop`](https://www.docker.com/products/docker-desktop/).
 
 ### 2.2 Dependency Services
-[docker-services](https://github.com/redwit-dev/docker-services) must be installed before installing the server. Redis, Mysql services are mandatory in the local environment and the rest are optional. You can view the list of services of  [docker-services](https://github.com/redwit-dev/docker-services) in the `docker-compose.yaml`.
+Our [docker-services](https://github.com/redwit-dev/docker-services) must be installed before installing the server. Redis, Mysql services are mandatory in the local environment and the rest are optional. You can view the list of services of  [docker-services](https://github.com/redwit-dev/docker-services) in the `docker-compose.yaml`.
 
 ### 2.3. Repository
 Download this project through the git clone command
